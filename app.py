@@ -7,7 +7,7 @@ app.secret_key = 'tem742'
 usuarios = {'esther':'esther1234'}
 
 cursos = [
-    {'nombre':'Desarrollo Web', 'docente':'Ing. Lopez'},
+    {'nombre':'DESARROLLO WEB', 'docente':'Ing. Lopez'},
     {'nombre':'Base de Datos', 'docente':'Ing. Garcia'},
     {'nombre':'Emergentes II', 'docente':'Ing. Mamani'}
 ]
