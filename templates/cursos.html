@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Mis Cursos</h2>
+<ul>
+{% for c in cursos %}
+    <li><b>{{ c.nombre }}</b> - {{ c.docente }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if msg %}<p style="background: #d4edda; padding:10px; color:green;"><b>{{ msg }}</b></p>{% endif %}
+
+<h1>{{ bienvenida }}</h1>
+
+{% if usuario_pref %}
+    <a href="/eliminar_cookie">ELIMINAR COOKIE usuario_preferido</a>
+{% endif %}
+<br><br>
+<p>Usuario de prueba: esther / esther1234</p>
+{% endblock %}

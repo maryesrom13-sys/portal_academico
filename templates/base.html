@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portal Academico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+    <a href="/">Inicio</a> |
+    <a href="/cursos">Cursos</a> |
+    {% if session.usuario %}
+        <a href="/perfil">{{ session.usuario }}</a> |
+        <a href="/logout">Salir</a>
+    {% else %}
+        <a href="/login">Login</a>
+    {% endif %}
+</nav>
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>
